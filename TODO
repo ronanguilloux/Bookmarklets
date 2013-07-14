@@ -35,3 +35,6 @@ SwitchSf2Dev
     javascript:!function(loc){ loc.href = 'http://' + loc.host + ((/^\/app_dev.php\//.test(loc.pathname)) ? loc.pathname.replace('app_dev.php/', '') : '/app_dev.php' + loc.pathname)}(location)
 
 (Thank you @calvein)
+
+[Manifesto](http://manifesto.ericdelabar.com/)- HTML5 Offline Application Cache verification bookmarklet
+    javascript:(function(){if(window.applicationCache){if(window.applicationCache.status==window.applicationCache.UNCACHED){cmc=document.createElement(%22SCRIPT%22);cmc.type=%22text/javascript%22;cmc.src=%22http://manifesto.ericdelabar.com/manifesto.js?x=%22+(Math.random());document.getElementsByTagName(%22head%22)[0].appendChild(cmc)}else{alert(%22Manifest%20file%20is%20valid.%22)}}else{alert(%22This%20browser%20does%20not%20support%20HTML5%20Offline%20Application%20Cache.%22)}})();
